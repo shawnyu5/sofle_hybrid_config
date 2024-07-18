@@ -37,7 +37,7 @@
 
         bluetooth_symbols_layer {
             bindings = <&mo 2>;
-            key-positions = <28 29>;
+            key-positions = <29>;
         };
     };
 
