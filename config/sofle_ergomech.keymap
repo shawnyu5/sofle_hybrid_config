@@ -111,7 +111,7 @@
 &trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans    &trans          &trans           &trans            &trans             &trans        &trans
 &trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans          &trans           &trans            &trans             &trans        &trans
-&trans  &trans      &trans     &trans       &trans       &trans    &trans          &trans           &trans            &trans             &trans
+&trans  &trans      &trans     &kp DELETE   &trans       &trans    &trans          &trans           &trans            &trans             &trans
                                                                    &kp A           &kp B            &kp C             &kp D              &kp E
             >;
 
