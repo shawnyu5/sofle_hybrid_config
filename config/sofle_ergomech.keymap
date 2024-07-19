@@ -42,7 +42,7 @@
 
         combo_right_alt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <18 19>;
+            key-positions = <18 20>;
         };
     };
 
