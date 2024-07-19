@@ -15,8 +15,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-&soft_off { hold-time-ms = <5000>; };
-
 / {
     // Activate ADJUST layer by pressing raise and lower
 
