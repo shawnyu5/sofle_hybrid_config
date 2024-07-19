@@ -37,7 +37,7 @@
             key-positions = <36 47>;
         };
 
-        bluetooth_symbols_layer {
+        bluetooth_symbols_layer_left {
             bindings = <&mo 2>;
             key-positions = <29 27>;
         };
@@ -45,6 +45,11 @@
         combo_right_alt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <18 20>;
+        };
+
+        bluetooth_symbols_layer_right {
+            bindings = <&mo 2>;
+            key-positions = <30 32>;
         };
     };
 
@@ -110,7 +115,7 @@
 
             bindings = <
 &trans  &trans      &trans     &trans       &trans       &trans    &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4  &bt BT_CLR
-&trans  &soft_off   &kp PSCRN  &kp K_CMENU  &trans       &trans    &trans          &trans           &trans            &trans             &soft_off     &trans
+&trans  &soft_off   &kp PSCRN  &kp K_CMENU  &trans       &trans    &trans          &trans           &trans            &trans             &trans        &trans
 &trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans          &trans           &trans            &trans             &trans        &trans
 &trans  &trans      &trans     &kp DELETE   &trans       &trans    &trans          &trans           &trans            &trans             &trans
