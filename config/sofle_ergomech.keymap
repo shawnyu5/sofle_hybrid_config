@@ -23,7 +23,7 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <1 2>;
+            if-layers = <2 3>;
             then-layer = <4>;
         };
     };
@@ -32,27 +32,28 @@
         compatible = "zmk,combos";
 
         combo_bluetooth_symbols_layer_left {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <29 27>;
-            layers = <DEFAULT_LAYER IOS_LAYER>;
+            layers = <0 1>;
         };
 
         // TODO: do I need this anymore? Now there is an IOS layer?
+
         combo_right_alt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <18 20>;
         };
 
         combo_bluetooth_symbols_layer_right {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <30 32>;
-            layers = <DEFAULT_LAYER IOS_LAYER>;
+            layers = <0 1>;
         };
 
         combo_caps_word {
             bindings = <&caps_word>;
             key-positions = <36 47>;
-            layers = <DEFAULT_LAYER IOS_LAYER>;
+            layers = <0 1>;
         };
     };
 
@@ -67,7 +68,7 @@
                 <&macro_tap>,
                 <&bt BT_SEL MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&to IOS_LAYER>;
+                <&to 1>;
         };
 
         default_layer_toggle: default_layer_toggle {
@@ -80,7 +81,7 @@
                 <&macro_tap>,
                 <&bt BT_SEL MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&to DEFAULT_LAYER>;
+                <&to 0>;
         };
     };
 
@@ -111,8 +112,24 @@
 &kp TAB     &kp Q      &kp W     &kp E          &kp R             &kp T         &kp Y              &kp U             &kp I          &kp O          &kp P           &kp BACKSLASH
 &kp ESCAPE  &kp A      &kp S     &kp D          &kp F             &kp G         &kp H              &kp J             &kp K          &kp L          &kp SEMI        &kp SQT
 &kp LSHFT   &kp Z      &kp X     &kp C          &kp V             &kp B         &kp N              &kp M             &kp COMMA      &kp DOT        &kp FSLH        &kp RSHFT
-&kp C_MUTE  &kp GRAVE  &kp LALT  &kp BACKSPACE  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp RIGHT_CONTROL  &kp ENTER         &kp SPACE      &mo 1          &kp RGUI
+&kp C_MUTE  &kp GRAVE  &kp LALT  &kp BACKSPACE  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp RIGHT_CONTROL  &kp ENTER         &kp SPACE      &mo 2          &kp RGUI
                                                                                 &kp ENTER          &kp C_AC_FORWARD  &kp K_REFRESH  &kp C_AC_BACK  &kp C_AC_CLOSE
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp PG_UP PG_UP>;
+        };
+
+        ios_layer {
+            label = "ios layer";
+            bindings = <
+&kp EQUAL   &kp N1     &kp N2            &kp N3         &kp N4            &kp N5        &kp N6         &kp N7            &kp N8         &kp N9         &kp N0          &kp MINUS
+&kp TAB     &kp Q      &kp W             &kp E          &kp R             &kp T         &kp Y          &kp U             &kp I          &kp O          &kp P           &kp BACKSLASH
+&kp ESCAPE  &kp A      &kp S             &kp D          &kp F             &kp G         &kp H          &kp J             &kp K          &kp L          &kp SEMI        &kp SQT
+&kp LSHFT   &kp Z      &kp X             &kp C          &kp V             &kp B         &kp N          &kp M             &kp COMMA      &kp DOT        &kp FSLH        &kp RSHFT
+&kp C_MUTE  &kp GRAVE  &kp LEFT_COMMAND  &kp BACKSPACE  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp RIGHT_ALT  &kp ENTER         &kp SPACE      &mo 2          &kp RGUI
+                                                                                        &kp ENTER      &kp C_AC_FORWARD  &kp K_REFRESH  &kp C_AC_BACK  &kp C_AC_CLOSE
             >;
 
             sensor-bindings =
@@ -163,22 +180,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        };
-
-        ios_layer {
-            label = "ios layer";
-            bindings = <
-&kp EQUAL   &kp N1     &kp N2            &kp N3         &kp N4            &kp N5        &kp N6         &kp N7            &kp N8         &kp N9         &kp N0          &kp MINUS
-&kp TAB     &kp Q      &kp W             &kp E          &kp R             &kp T         &kp Y          &kp U             &kp I          &kp O          &kp P           &kp BACKSLASH
-&kp ESCAPE  &kp A      &kp S             &kp D          &kp F             &kp G         &kp H          &kp J             &kp K          &kp L          &kp SEMI        &kp SQT
-&kp LSHFT   &kp Z      &kp X             &kp C          &kp V             &kp B         &kp N          &kp M             &kp COMMA      &kp DOT        &kp FSLH        &kp RSHFT
-&kp C_MUTE  &kp GRAVE  &kp LEFT_COMMAND  &kp BACKSPACE  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp RIGHT_ALT  &kp ENTER         &kp SPACE      &mo 1          &kp RGUI
-                                                                                        &kp ENTER      &kp C_AC_FORWARD  &kp K_REFRESH  &kp C_AC_BACK  &kp C_AC_CLOSE
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp PG_UP PG_UP>;
         };
 
         adjust_layer {
