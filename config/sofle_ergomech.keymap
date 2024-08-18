@@ -76,7 +76,7 @@
                 <&macro_tap>,
                 <&bt BT_SEL MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&to 1>;
+                <&to DEFAULT_LAYER>;
         };
     };
 
