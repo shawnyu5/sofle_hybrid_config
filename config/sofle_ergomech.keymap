@@ -52,6 +52,19 @@
         };
     };
 
+    macros {
+       ios_layer_toggle: ios_layer_toggle {
+          compatible = "zmk,behavior-macro-one-param";
+          wait-ms = <0>;
+          tap-ms = <0>;
+          #binding-cells = <1>;
+          bindings =
+             <&macro_param_1to2>,
+             <&macro_tap &bt BT_SEL MACRO_PLACEHOLDER>,
+             <&macro_press &to 3>;
+       };
+    };
+
     behaviors {
         new_behavior: new_behavior {
             compatible = "zmk,behavior-caps-word";
