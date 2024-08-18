@@ -69,11 +69,11 @@ layers:
   - E
   bluetooth_symbol:
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
+  - '&default_layer_toggle'
   - '&ios_layer_toggle 1'
   - '&ios_layer_toggle 2'
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - '&default_layer_toggle 3'
+  - '&default_layer_toggle 4'
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
