@@ -1,10 +1,6 @@
 name: Build firmware
 on: [push, pull_request, workflow_dispatch]
 
-concurrency:
-  group: build_firmware
-  cancel-in-progress: true
-
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
