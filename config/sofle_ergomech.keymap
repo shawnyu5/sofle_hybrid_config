@@ -31,24 +31,28 @@
     combos {
         compatible = "zmk,combos";
 
-        bluetooth_symbols_layer_left {
+        combo_bluetooth_symbols_layer_left {
             bindings = <&mo 2>;
             key-positions = <29 27>;
+            layers = <DEFAULT_LAYER IOS_LAYER>;
         };
 
+        // TODO: do I need this anymore? Now there is an IOS layer?
         combo_right_alt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <18 20>;
         };
 
-        bluetooth_symbols_layer_right {
+        combo_bluetooth_symbols_layer_right {
             bindings = <&mo 2>;
             key-positions = <30 32>;
+            layers = <DEFAULT_LAYER IOS_LAYER>;
         };
 
-        comb_caps_word {
+        combO_caps_word {
             bindings = <&caps_word>;
             key-positions = <36 47>;
+            layers = <DEFAULT_LAYER IOS_LAYER>;
         };
     };
 
@@ -151,11 +155,11 @@
 
             bindings = <
 &trans  &default_layer_toggle 0  &ios_layer_toggle 1  &ios_layer_toggle 2  &default_layer_toggle 3  &default_layer_toggle 4  &bt BT_DISC 0   &bt BT_DISC 1    &bt BT_DISC 2     &bt BT_DISC 3      &bt BT_DISC 4  &bt BT_CLR
-&trans  &soft_off     &kp PSCRN            &kp K_CMENU          &trans        &trans        &trans          &out OUT_TOG     &trans            &trans             &trans         &trans
-&trans  &kp LALT      &kp LCTRL            &kp LSHFT            &trans        &kp CLCK      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
-&trans  &kp K_UNDO    &kp K_CUT            &kp K_COPY           &kp K_PASTE   &trans        &trans          &trans           &trans            &trans             &trans         &trans
-&trans  &trans        &trans               &kp DELETE           &trans        &trans        &trans          &trans           &trans            &trans             &trans
-                                                                                            &kp A           &kp B            &kp C             &kp D              &kp E
+&trans  &soft_off                &kp PSCRN            &kp K_CMENU          &trans                   &trans                   &trans          &out OUT_TOG     &trans            &trans             &trans         &trans
+&trans  &kp LALT                 &kp LCTRL            &kp LSHFT            &trans                   &kp CLCK                 &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
+&trans  &kp K_UNDO               &kp K_CUT            &kp K_COPY           &kp K_PASTE              &trans                   &trans          &trans           &trans            &trans             &trans         &trans
+&trans  &trans                   &trans               &kp DELETE           &trans                   &trans                   &trans          &trans           &trans            &trans             &trans
+                                                                                                                             &kp A           &kp B            &kp C             &kp D              &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
