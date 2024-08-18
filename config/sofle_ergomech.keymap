@@ -128,7 +128,7 @@
 &kp TAB     &kp Q      &kp W             &kp E          &kp R             &kp T         &kp Y          &kp U             &kp I          &kp O          &kp P           &kp BACKSLASH
 &kp ESCAPE  &kp A      &kp S             &kp D          &kp F             &kp G         &kp H          &kp J             &kp K          &kp L          &kp SEMI        &kp SQT
 &kp LSHFT   &kp Z      &kp X             &kp C          &kp V             &kp B         &kp N          &kp M             &kp COMMA      &kp DOT        &kp FSLH        &kp RSHFT
-&kp C_MUTE  &kp GRAVE  &kp LEFT_COMMAND  &kp BACKSPACE  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp RIGHT_ALT  &kp ENTER         &kp SPACE      &mo 2          &kp RGUI
+&kp C_MUTE  &kp GRAVE  &kp LEFT_COMMAND  &kp BACKSPACE  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_ALT  &kp ENTER         &kp SPACE      &mo 2          &kp RGUI
                                                                                         &kp ENTER      &kp C_AC_FORWARD  &kp K_REFRESH  &kp C_AC_BACK  &kp C_AC_CLOSE
             >;
 
