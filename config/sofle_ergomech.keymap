@@ -49,7 +49,7 @@
             layers = <DEFAULT_LAYER IOS_LAYER>;
         };
 
-        combO_caps_word {
+        combo_caps_word {
             bindings = <&caps_word>;
             key-positions = <36 47>;
             layers = <DEFAULT_LAYER IOS_LAYER>;
