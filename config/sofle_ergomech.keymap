@@ -150,7 +150,7 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &bt BT_SEL 0  &ios_layer_toggle 1  &ios_layer_toggle 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_DISC 0   &bt BT_DISC 1    &bt BT_DISC 2     &bt BT_DISC 3      &bt BT_DISC 4  &bt BT_CLR
+&trans  &default_layer_toggle 0  &ios_layer_toggle 1  &ios_layer_toggle 2  &default_layer_toggle 3  &default_layer_toggle 4  &bt BT_DISC 0   &bt BT_DISC 1    &bt BT_DISC 2     &bt BT_DISC 3      &bt BT_DISC 4  &bt BT_CLR
 &trans  &soft_off     &kp PSCRN            &kp K_CMENU          &trans        &trans        &trans          &out OUT_TOG     &trans            &trans             &trans         &trans
 &trans  &kp LALT      &kp LCTRL            &kp LSHFT            &trans        &kp CLCK      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
 &trans  &kp K_UNDO    &kp K_CUT            &kp K_COPY           &kp K_PASTE   &trans        &trans          &trans           &trans            &trans             &trans         &trans
