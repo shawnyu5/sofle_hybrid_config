@@ -22,9 +22,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        adjust_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
+        ios_arrow_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -32,7 +32,7 @@
         compatible = "zmk,combos";
 
         combo_bluetooth_symbols_layer_left {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <29 27>;
             layers = <0 1>;
         };
@@ -45,7 +45,7 @@
         };
 
         combo_bluetooth_symbols_layer_right {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <30 32>;
             layers = <0 1>;
         };
@@ -158,6 +158,17 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        ios_arrows_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans  &trans
+                                                          &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         bluetooth_symbol_layer {
