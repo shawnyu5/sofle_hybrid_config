@@ -3,8 +3,8 @@ layers:
     X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, '`', LALT, BACKSPACE, LEFT CONTROL, LEFT GUI, RIGHT CONTROL, ENTER, SPACE, arrows, RGUI, ENTER, AC FORWARD, REFRESH,
     AC BACK, AC CLOSE]
   ios: ['=', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, \, ESCAPE, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X,
-    C, V, B, N, M, ',', ., /, RSHFT, MUTE, '`', LEFT COMMAND, BACKSPACE, LEFT ALT, LEFT GUI, RIGHT ALT, ENTER, SPACE, arrows, RGUI, ENTER, AC FORWARD, REFRESH, AC
-      BACK, AC CLOSE]
+    C, V, B, N, M, ',', ., /, RSHFT, MUTE, '`', LEFT COMMAND, BACKSPACE, LEFT CONTROL, LEFT GUI, RIGHT ALT, ENTER, SPACE, arrows, RGUI, ENTER, AC FORWARD, REFRESH,
+    AC BACK, AC CLOSE]
   arrows:
   - F1
   - F2
@@ -123,7 +123,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT CONTROL
+  - LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
