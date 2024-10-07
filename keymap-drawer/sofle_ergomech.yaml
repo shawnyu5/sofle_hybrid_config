@@ -138,9 +138,9 @@ layers:
   bluetooth_symbol:
   - {t: ▽, type: trans}
   - '&default_layer_toggle'
-  - '&ios_layer_toggle 1'
+  - '&default_layer_toggle 1'
   - '&ios_layer_toggle 2'
-  - '&default_layer_toggle 3'
+  - '&ios_layer_toggle 3'
   - '&default_layer_toggle 4'
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
