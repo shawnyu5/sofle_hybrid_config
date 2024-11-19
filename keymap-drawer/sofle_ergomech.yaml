@@ -48,7 +48,7 @@ layers:
   - COPY
   - PASTE
   - {t: ▽, type: trans}
-  - '['
+  - '&studio_unlock'
   - ']'
   - ;
   - ':'
