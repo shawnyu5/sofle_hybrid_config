@@ -1,6 +1,24 @@
 layers:
-  default:
-  - {t: ESC, s: '`'}
+  default: ['=', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, \, ESCAPE, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
+    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, '`', LALT, BACKSPACE, LEFT CONTROL, LEFT GUI, RIGHT CONTROL, ENTER, SPACE, arrows, RGUI, ENTER, AC FORWARD, REFRESH,
+    AC BACK, AC CLOSE]
+  ios: ['=', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, \, ESCAPE, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X,
+    C, V, B, N, M, ',', ., /, RSHFT, MUTE, '`', LEFT COMMAND, BACKSPACE, LEFT CONTROL, LEFT GUI, RIGHT ALT, ENTER, SPACE, arrows, RGUI, ENTER, AC FORWARD, REFRESH,
+    AC BACK, AC CLOSE]
+  arrows:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -11,131 +29,154 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BACKSPACE
-  - '&caps'
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '-'
-  - TAB
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ENTER
-  - LSHFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ''''
-  - MUTE
-  - LGUI
-  - LEFT CONTROL
-  - {t: DELETE, h: LEFT ALT}
-  - {t: BACKSPACE, h: lower}
-  - RET
-  - SPACE
-  - {t: LEFT, h: raise}
-  - {t: DOWN, h: RIGHT ALT}
-  - {t: UP, h: RIGHT CONTROL}
-  - {t: RIGHT, h: RGUI}
-  - PRINTSCREEN
-  - RIGHT
-  - UP ARROW
+  - F12
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - LEFT
   - DOWN
-  lower:
-  - '`'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - UP ARROW
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Y
-  - U
-  - I
-  - O
-  - P
+  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - {t: ▽, type: trans}
   - '['
-  - '7'
-  - '8'
-  - '9'
+  - ']'
+  - ;
+  - ':'
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - A
+  - B
+  - C
+  - D
+  - E
+  ios_arrows:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  bluetooth_symbol:
+  - {t: ▽, type: trans}
+  - '&default_layer_toggle'
+  - '&default_layer_toggle 1'
+  - '&ios_layer_toggle 2'
+  - '&ios_layer_toggle 3'
+  - '&default_layer_toggle 4'
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '2'}
+  - {t: BT DISC, h: '3'}
+  - {t: BT DISC, h: '4'}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - '&soft_off'
+  - PSCRN
+  - CMENU
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - OUT TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LALT
+  - LCTRL
+  - {t: LSHFT, type: held}
+  - {t: ▽, type: trans}
+  - {t: CLCK, type: held}
+  - '{'
+  - '}'
+  - '['
   - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - '='
-  - '4'
-  - '5'
-  - '6'
-  - +
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - \
-  - '1'
-  - '2'
-  - '3'
-  - '|'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
-  - {type: held}
-  - {t: ▽, type: trans}
-  - '-'
-  - {t: '0', h: raise}
-  - .
-  - (
-  - )
-  - RIGHT SHIFT
-  - END
-  - PAGE UP
-  - HOME
-  - PAGE DOWN
-  raise:
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - PG UP
-  - ''
-  - ''
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -143,57 +184,22 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - HOME
-  - Ctl+ LEFT
-  - UP
-  - Ctl+ RIGHT
-  - END
-  - '&msc MOVE_UP'
-  - '&msc MOVE_LEFT'
-  - '&mmv MOVE_UP'
-  - '&msc MOVE_RIGHT'
-  - '&mkp MB5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+ LEFT
-  - LEFT
-  - DOWN
-  - RIGHT
-  - Sft+ RIGHT
-  - '&msc MOVE_DOWN'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&mkp MB4'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+ HOME
-  - Sft+Ctl+ LEFT
-  - PG DN
-  - Sft+Ctl+ RIGHT
-  - Sft+ END
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PRINTSCREEN
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mmv MOVE_RIGHT'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
+  - A
+  - B
+  - C
+  - D
+  - E
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -247,6 +253,10 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -255,7 +265,15 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+combos:
+- p: [29, 27]
+  k: bluetooth_symbol
+  l: [default, ios]
+- p: [18, 20]
+  k: RIGHT ALT
+- p: [30, 32]
+  k: bluetooth_symbol
+  l: [default, ios]
+- p: [36, 47]
+  k: '&caps_word'
+  l: [default, ios]
