@@ -67,8 +67,8 @@ text.footer {
     paint-order: stroke;
 }
 
-/* styling for combo tap, and key hold/shifted label text */
-text.combo, text.hold, text.shifted {
+/* styling for combo tap, and key non-tap label text */
+text.combo, text.hold, text.shifted, text.left, text.right {
     font-size: 11px;
 }
 
@@ -82,12 +82,20 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.left {
+    text-anchor: start;
+}
+
+text.right {
+    text-anchor: end;
+}
+
 text.layer-activator {
     text-decoration: underline;
 }
 
 /* styling for hold/shifted label text in combo box */
-text.combo.hold, text.combo.shifted {
+text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
     font-size: 8px;
 }
 
@@ -392,9 +400,10 @@ path.combo {
 <path d="M252,148 l38,6" class="combo"/>
 <path d="M252,148 l-38,-6" class="combo"/>
 <rect rx="6" ry="6" x="238" y="135" width="28" height="26" class="combo"/>
-<a href="#bluetooth_symbol">
-<text x="252" y="148" class="combo tap layer-activator"><tspan style="font-size: 64%">bluetooth_…</tspan></text>
-</a></g>
+<text x="252" y="148" class="combo tap">
+<tspan x="252" dy="-0.6em" style="font-size: 78%">bluetooth</tspan><tspan x="252" dy="1.2em" style="font-size: 78%">…</tspan>
+</text>
+</g>
 <g class="combo combopos-1">
 <path d="M588,92 l-38,6" class="combo"/>
 <path d="M588,92 l38,-6" class="combo"/>
@@ -407,9 +416,10 @@ path.combo {
 <path d="M588,148 l-38,6" class="combo"/>
 <path d="M588,148 l38,-6" class="combo"/>
 <rect rx="6" ry="6" x="574" y="135" width="28" height="26" class="combo"/>
-<a href="#bluetooth_symbol">
-<text x="588" y="148" class="combo tap layer-activator"><tspan style="font-size: 64%">bluetooth_…</tspan></text>
-</a></g>
+<text x="588" y="148" class="combo tap">
+<tspan x="588" dy="-0.6em" style="font-size: 78%">bluetooth</tspan><tspan x="588" dy="1.2em" style="font-size: 78%">…</tspan>
+</text>
+</g>
 <g class="combo combopos-3">
 <path d="M420,213 l-373,0" class="combo"/>
 <path d="M420,213 l373,0" class="combo"/>
@@ -696,9 +706,10 @@ path.combo {
 <path d="M252,148 l38,6" class="combo"/>
 <path d="M252,148 l-38,-6" class="combo"/>
 <rect rx="6" ry="6" x="238" y="135" width="28" height="26" class="combo"/>
-<a href="#bluetooth_symbol">
-<text x="252" y="148" class="combo tap layer-activator"><tspan style="font-size: 64%">bluetooth_…</tspan></text>
-</a></g>
+<text x="252" y="148" class="combo tap">
+<tspan x="252" dy="-0.6em" style="font-size: 78%">bluetooth</tspan><tspan x="252" dy="1.2em" style="font-size: 78%">…</tspan>
+</text>
+</g>
 <g class="combo combopos-1">
 <path d="M588,92 l-38,6" class="combo"/>
 <path d="M588,92 l38,-6" class="combo"/>
@@ -711,9 +722,10 @@ path.combo {
 <path d="M588,148 l-38,6" class="combo"/>
 <path d="M588,148 l38,-6" class="combo"/>
 <rect rx="6" ry="6" x="574" y="135" width="28" height="26" class="combo"/>
-<a href="#bluetooth_symbol">
-<text x="588" y="148" class="combo tap layer-activator"><tspan style="font-size: 64%">bluetooth_…</tspan></text>
-</a></g>
+<text x="588" y="148" class="combo tap">
+<tspan x="588" dy="-0.6em" style="font-size: 78%">bluetooth</tspan><tspan x="588" dy="1.2em" style="font-size: 78%">…</tspan>
+</text>
+</g>
 <g class="combo combopos-3">
 <path d="M420,213 l-373,0" class="combo"/>
 <path d="M420,213 l373,0" class="combo"/>
@@ -992,8 +1004,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1562)" class="layer-ios_arrows">
-<text x="0" y="28" class="label" id="ios_arrows">ios_arrows:</text>
+<g transform="translate(30, 1562)" class="layer-ios arrows">
+<text x="0" y="28" class="label" id="ios-arrows">ios arrows:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 45)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1262,8 +1274,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2083)" class="layer-bluetooth_symbol">
-<text x="0" y="28" class="label" id="bluetooth_symbol">bluetooth_symbol:</text>
+<g transform="translate(30, 2083)" class="layer-bluetooth / symbols">
+<text x="0" y="28" class="label" id="bluetooth--symbols">bluetooth / symbols:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 45)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1372,13 +1384,13 @@ path.combo {
 <tspan x="0" dy="-0.6em">OUT</tspan><tspan x="0" dy="1.2em">TOG</tspan>
 </text>
 </g>
-<g transform="translate(644, 84)" class="key trans keypos-20">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(644, 84)" class="key keypos-20">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">{</text>
 </g>
-<g transform="translate(700, 92)" class="key trans keypos-21">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(700, 92)" class="key keypos-21">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">}</text>
 </g>
 <g transform="translate(756, 101)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1412,13 +1424,13 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap">CLCK</text>
 </g>
-<g transform="translate(532, 157)" class="key keypos-30">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">{</text>
+<g transform="translate(532, 157)" class="key trans keypos-30">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(588, 148)" class="key keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">}</text>
+<g transform="translate(588, 148)" class="key trans keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(644, 140)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

@@ -70,7 +70,7 @@ layers:
   - C
   - D
   - E
-  ios_arrows:
+  ios arrows:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -135,7 +135,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  bluetooth_symbol:
+  bluetooth / symbols:
   - {t: ▽, type: trans}
   - '&default_layer_toggle'
   - '&default_layer_toggle 1'
@@ -156,8 +156,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - OUT TOG
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '{'
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,8 +166,8 @@ layers:
   - {t: LSHFT, type: held}
   - {t: ▽, type: trans}
   - {t: CLCK, type: held}
-  - '{'
-  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '['
   - ']'
   - {t: ▽, type: trans}
@@ -267,12 +267,12 @@ layers:
   - E
 combos:
 - p: [29, 27]
-  k: bluetooth_symbol
+  k: bluetooth / symbols
   l: [default, ios]
 - p: [18, 20]
   k: RIGHT ALT
 - p: [30, 32]
-  k: bluetooth_symbol
+  k: bluetooth / symbols
   l: [default, ios]
 - p: [36, 47]
   k: '&caps_word'
