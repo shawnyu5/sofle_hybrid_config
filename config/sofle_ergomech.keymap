@@ -149,12 +149,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F1  &kp F2      &kp F3     &kp F4      &kp F5       &kp F6     &kp F7    &kp F8    &kp F9        &kp F10    &kp F11   &kp F12
-&trans  &kp N1      &kp N2     &kp N3      &kp N4       &kp N5     &kp N6    &kp N7    &kp N8        &kp N9     &kp N0    &kp F12
-&trans  &kp EXCL    &kp AT     &kp HASH    &kp DLLR     &kp PRCNT  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans    &trans
+&kp F1  &kp F2      &kp F3     &kp F4      &kp F5       &kp F6     &kp F7          &kp F8    &kp F9        &kp F10    &kp F11   &kp F12
+&trans  &kp N1      &kp N2     &kp N3      &kp N4       &kp N5     &kp N6          &kp N7    &kp N8        &kp N9     &kp N0    &kp F12
+&trans  &kp EXCL    &kp AT     &kp HASH    &kp DLLR     &kp PRCNT  &kp LEFT        &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans    &trans
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans     &studio_unlock  &kp RBKT  &kp SEMI      &kp COLON  &kp BSLH  &trans
-&trans  &trans      &trans     &trans      &trans       &trans     &trans    &trans    &trans        &trans     &trans
-                                                                   &kp A     &kp B     &kp C         &kp D      &kp E
+&trans  &trans      &trans     &trans      &trans       &trans     &trans          &trans    &trans        &trans     &trans
+                                                                   &kp A           &kp B     &kp C         &kp D      &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -183,12 +183,12 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &default_layer_toggle 0  &default_layer_toggle 1  &ios_layer_toggle 2  &ios_layer_toggle 3  &default_layer_toggle 4  &bt BT_DISC 0   &bt BT_DISC 1    &bt BT_DISC 2     &bt BT_DISC 3      &bt BT_DISC 4  &bt BT_CLR
-&trans  &soft_off                &kp PSCRN                &kp K_CMENU          &trans               &trans                   &trans          &out OUT_TOG     &trans            &trans             &trans         &trans
-&trans  &kp LALT                 &kp LCTRL                &kp LSHFT            &trans               &kp CLCK                 &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
-&trans  &kp K_UNDO               &kp K_CUT                &kp K_COPY           &kp K_PASTE          &trans                   &trans          &trans           &trans            &trans             &trans         &trans
-&trans  &trans                   &trans                   &kp DELETE           &trans               &trans                   &trans          &trans           &trans            &trans             &trans
-                                                                                                                             &kp A           &kp B            &kp C             &kp D              &kp E
+&trans  &default_layer_toggle 0  &default_layer_toggle 1  &ios_layer_toggle 2  &ios_layer_toggle 3  &default_layer_toggle 4  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &bt BT_DISC 3    &bt BT_DISC 4  &bt BT_CLR
+&trans  &soft_off                &kp PSCRN                &kp K_CMENU          &trans               &trans                   &trans         &out OUT_TOG   &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans         &trans
+&trans  &kp LALT                 &kp LCTRL                &kp LSHFT            &trans               &kp CLCK                 &trans         &trans         &kp LBKT        &kp RBKT         &trans         &trans
+&trans  &kp K_UNDO               &kp K_CUT                &kp K_COPY           &kp K_PASTE          &trans                   &trans         &trans         &trans          &trans           &trans         &trans
+&trans  &trans                   &trans                   &kp DELETE           &trans               &trans                   &trans         &trans         &trans          &trans           &trans
+                                                                                                                             &kp A          &kp B          &kp C           &kp D            &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
