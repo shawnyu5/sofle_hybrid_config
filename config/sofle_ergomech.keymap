@@ -187,7 +187,7 @@
 &trans  &soft_off                &kp PSCRN                &kp K_CMENU          &trans               &trans                   &trans         &out OUT_TOG   &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans         &trans
 &trans  &kp LALT                 &kp LCTRL                &kp LSHFT            &trans               &kp CLCK                 &trans         &trans         &kp LBKT        &kp RBKT         &trans         &trans
 &trans  &kp K_UNDO               &kp K_CUT                &kp K_COPY           &kp K_PASTE          &trans                   &trans         &trans         &trans          &trans           &trans         &trans
-&trans  &trans                   &trans                   &kp DELETE           &trans               &trans                   &trans         &trans         &trans          &trans           &trans
+&trans  &trans                   &trans                   &kp DELETE           &kp LEFT_CONTROL     &trans                   &trans         &trans         &trans          &trans           &trans
                                                                                                                              &kp A          &kp B          &kp C           &kp D            &kp E
             >;
 
