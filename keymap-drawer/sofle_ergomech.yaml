@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: sofle_ergomech}
 layers:
   default: ['=', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, \, ESCAPE, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
     X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, '`', LALT, BACKSPACE, LEFT CONTROL, LEFT GUI, RIGHT CONTROL, ENTER, SPACE, arrows, RGUI, ENTER, AC FORWARD, REFRESH,
@@ -188,7 +189,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DELETE
-  - {t: ▽, type: trans}
+  - LEFT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
