@@ -145,7 +145,7 @@ layers:
   - '&default_layer_toggle 1'
   - '&ios_layer_toggle 2'
   - '&ios_layer_toggle 3'
-  - '&default_layer_toggle 4'
+  - '&mac_layer_toggle 4'
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
