@@ -214,12 +214,12 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &default_layer_toggle 0  &default_layer_toggle 1  &ios_layer_toggle 2  &ios_layer_toggle 3  &default_layer_toggle 4  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &bt BT_DISC 3    &bt BT_DISC 4  &bt BT_CLR
-&trans  &soft_off                &kp PSCRN                &kp K_CMENU          &trans               &trans                   &trans         &out OUT_TOG   &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans         &trans
-&trans  &kp LALT                 &kp LCTRL                &kp LSHFT            &trans               &kp CLCK                 &trans         &trans         &kp LBKT        &kp RBKT         &trans         &trans
-&trans  &kp K_UNDO               &kp K_CUT                &kp K_COPY           &kp K_PASTE          &trans                   &trans         &trans         &trans          &trans           &trans         &trans
-&trans  &trans                   &trans                   &kp DELETE           &kp LEFT_CONTROL     &trans                   &trans         &trans         &trans          &trans           &trans
-                                                                                                                             &kp A          &kp B          &kp C           &kp D            &kp E
+&trans  &default_layer_toggle 0  &default_layer_toggle 1  &ios_layer_toggle 2  &ios_layer_toggle 3  &mac_layer_toggle 4  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &bt BT_DISC 3    &bt BT_DISC 4  &bt BT_CLR
+&trans  &soft_off                &kp PSCRN                &kp K_CMENU          &trans               &trans               &trans         &out OUT_TOG   &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans         &trans
+&trans  &kp LALT                 &kp LCTRL                &kp LSHFT            &trans               &kp CLCK             &trans         &trans         &kp LBKT        &kp RBKT         &trans         &trans
+&trans  &kp K_UNDO               &kp K_CUT                &kp K_COPY           &kp K_PASTE          &trans               &trans         &trans         &trans          &trans           &trans         &trans
+&trans  &trans                   &trans                   &kp DELETE           &kp LEFT_CONTROL     &trans               &trans         &trans         &trans          &trans           &trans
+                                                                                                                         &kp A          &kp B          &kp C           &kp D            &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
