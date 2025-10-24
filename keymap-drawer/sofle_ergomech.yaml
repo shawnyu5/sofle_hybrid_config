@@ -272,12 +272,12 @@ layers:
 combos:
 - p: [29, 27]
   k: bluetooth / symbols
-  l: [default, ios]
+  l: [default, ios, mac]
 - p: [18, 20]
   k: RIGHT ALT
 - p: [30, 32]
   k: bluetooth / symbols
-  l: [default, ios]
+  l: [default, ios, mac]
 - p: [36, 47]
   k: '&caps_word'
   l: [default, ios]
