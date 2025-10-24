@@ -34,7 +34,7 @@
         combo_bluetooth_symbols_layer_left {
             bindings = <&mo 5>;
             key-positions = <29 27>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         // TODO: do I need this anymore? Now there is an IOS layer?
@@ -47,7 +47,7 @@
         combo_bluetooth_symbols_layer_right {
             bindings = <&mo 5>;
             key-positions = <30 32>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         combo_caps_word {
